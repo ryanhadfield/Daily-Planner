@@ -56,8 +56,8 @@ $(".save").on("click",function(){
      var text = $("#"+id).val()
      console.log(text)
 
-     localStorage.setItem("id","text");
+     localStorage.setItem(id, text);
 
-     document.getElementById(id).innerHTML = localStorage.getItem("text");
+     document.getElementById(id).innerHTML = localStorage.getItem(text);
 }) 
 
