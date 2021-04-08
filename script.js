@@ -57,7 +57,13 @@ $(".save").on("click",function(){
      console.log(text)
 
      localStorage.setItem(id, text);
-
-     document.getElementById(id).innerHTML = localStorage.getItem(text);
+     dispData();
 }) 
 
+function dispData(){
+  for (let i = 0; i < hourOfDay.length; i++) {
+    document.getElementById(i).innerHTML = localStorage.getItem(i);
+  }
+}
+
+dispData();
